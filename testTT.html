@@ -6,8 +6,24 @@
     <title> very simple EZZZ </title>
 </head>
 <body>
-    
-    <div id="myDiv">This is a div element.</div>
+   
+  <form id="articleForm">
+    <label for="title"
+
+    <label> for="address">ton Adresse,</label>
+    <input type="text" id="address" required>
+
+    <label for="description">laDescription:
+    <textarea id="description" rows="1" required></textarea>
+
+    <button type="submit">submittttt</button>
+</form>
+
+<div id="articlesContainer"></div>
+
+
+
+    <div id="myDiv">borringg</div>
 <br>
 <button type="button" onclick="myFunction()">Set border</button>
     
@@ -18,16 +34,36 @@
     <time> time 19:00</time> <br>
 <cite> click here !!! </cite>
 
-<button type="button" onclick="myFunction()">Set background color</button>
+<button type="button" onclick="myFunction()">BACKGROUND COLLOR----|]> </button>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
 
 <script>
 
+
+
+const articleAddress = document.createElement('p');
+            articleAddress.textContent = "Adresse: " + address;
+            article.appendChild(articleAddress);
+
+        const articleDescription = document.createElement('p');
+       articleDescription.textContent = description; +
+     article.appendChild(articleDescription); 
+            
+
+
 function myFunction() {
-  document.getElementById("myDiv").style.border = "thick solid #0000FF";
+  document.getElementById("myDiv").style.border = "green";
 }
 
 function myFunction() {
-  document.body.style.backgroundColor = "red";
+  document.body.style.backgroundColor = "cyan";
 }
 
 var nom = "thedarkpassenger";
